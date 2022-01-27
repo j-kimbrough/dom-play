@@ -1,34 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-<title> Title goes here</title>
+<title> DOM Play</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
-  
+  <style>
+    /*
+    div#play span{
+      background-color: yellow;
+    }
+    */
+  </style >
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of Project</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
+     <h1>DOM Play - Rosie the Riveter: An American Icon</h1>
      </header>
      
    <main class="wrapper"> 
-     <p>Content goes here</p>
-     <footer>
-      <p><small>&copy; 2021 by 
-          JADE KIMBROUGH, All Rights Reserved ~ 
-          <a id="html-checker" href="#">Check HTML</a> ~ 
-          <a id="css-checker" href="#">Check CSS</a></small>
-     </p>
+     <p style="text-align: center;">On this page is the first act of Rosie the Riveter: An American Icon. <br/>
+       It Uses JavaScript data attributes and a Nodelist to highlight actors in a play by clicking on the name of the actors.</p>
+      <hr>
+      <h2>Rosie the Riveter: An American Icon</h2>
+     <h3>Act I Scene 1</h3>
+      <p>Curtain opens to a factory floor. Conveyor belt located mid-stage going off-stage. <br/>
+        Supervisors’ office on catwalk SR. RETIRED COLONEL FRANK sits at desk with paperwork. <br/>
+        Men are working on the conveyor production. </p>
+
+     <div id="play">
+        <p><span data-actor="charlie">CHARLIE <br/>
+        Need more rivets.</span></p>
+        
+        <p><span data-actor="henry">HENRY <br/>
+        Coming with a bucket of rivets.</span></p>
+        
+        <p><span data-actor="wayne">WAYNE <br/>
+        Art, heads up … new piston on the belt.</span></p>
+        
+        <p><span data-actor="arthur">ARTHUR <br/>
+        Ready.</span></p>
+        
+        <p><span data-actor="larry">LARRY<br/>
+        Put another tick mark on the tally.</span></p>
+        
+        <p><span data-actor="joe">JOE<br/>
+        That puts us past last month’s quota.</span></p>
+        
+        <p><span data-actor="walter">WALTER<br/>
+        My cousin got his draft notice. He is headed to boot camp next week.</span></p>
+        
+        <p><span data-actor="charlie">CHARLIE<br/>
+        With America in the war, won’t we all be called into service?</span></p>
+        
+        <p><span data-actor="walter">WALTER<br/>
+        Some men have already volunteered.</span></p>
+        
+        <p><span data-actor="charlie">CHARLIE<br/>
+        I plan to join the Marines by summer.</span></p>
+        
+        <p><span data-actor="arthur">ARTHUR<br/>
+        Really, Charlie, you’re going to volunteer?</span></p>
+        
+        <p><span data-actor="charlie">CHARLIE<br/>
+        Of course! Just as every red-blooded American man should want to do.</span></p>
+        
+        <p><span data-actor="arthur">ARTHUR<br/>
+        I suppose, but I can wait until my draft notice arrives.</span></p>
+        
+        <p><span data-actor="henry">HENRY<br/>
+        I’ll volunteer with you Charlie. But I’m gonna join the Navy.</span></p>
+        
+        <p><span data-actor="charlie">CHARLIE<br/>
+        I’ve always wanted to be a Marine.</span></p>
+        
+        <p><span data-actor="larry">LARRY<br/>
+        The Marines are always in the thick of things. I’m gonna stick with being a mechanic and fix all the stuff you GI Joes break.</span></p>
+        
+        <p><span data-actor="wayne">WAYNE<br/>
+        I gotta farm to run with my folks and wife, as well as my job here.</span></p>
+        
+        <p><span data-actor="joe">JOE<br/>
+        And me and my wife just had baby number 4. Wouldn’t want to leave her all by herself with all that noise and chaos.
+        </span></p>
+        
+        <p><span data-actor="charlie">CHARLIE<br/>
+        Each man will need to do his duty. Some can get deferrals to take care of necessary business at home.</span></p>
+        
+        <p><span data-actor="courier">COURIER<br/>
+        [Enters and crosses to CHARLIE.] I’m looking for Colonel Frank Westwood.</span></p>
+        
+        <p><span data-actor="charlie">CHARLIE<br/>
+        He’s up in the office, use those stairs.</span></p>
+        
+        <p><span data-actor="courier">COURIER<br/>
+        Thanks. [Crosses to Supervisor’s office.]</span></p>
+        
+        <p><span data-actor="walter">WALTER<br/>
+        Looks like that may be the news we’ve all been waiting for.</span></p>
+        
+        <p><span data-actor="wayne">WAYNE<br/>
+        Ya, that sure looked official.</span></p>
+        
+        <p><span data-actor="charlie">CHARLIE<br/>
+        Frank will share with us if it’s news for all.</span></p>
+        
+        <p><span data-actor="courier">COURIER<br/>
+        [Knocks and enters office.] Sir, I have draft notices for your employees.</span></p>
+        
+        <p><span data-actor="frank">COL FRANK<br/>
+        I was expecting those. I’ll deliver the news. [COURIER exits.]<br/>
+        [COL FRANK crosses onto factory floor, work stops.]<br/>
+        Well, men. We knew it was only a matter of time until your draft notices arrived. And here they are. <br/>
+        [Distributes envelopes.] I am also being called out of retirement to set up training and will be seeing many of you at the local training center. <br/>
+        I think we should just clean up and call it a day. We can all go together to the enlistment office and get this taken care of.</span></p>
+        
+        <p><span data-actor="charlie">CHARLIE<br/>
+        Frank, do we all just sign up with the Army? I know a couple fellas who want to be in the Navy, and I want to be a Marine.
+        </span></p>
+        
+        <p><span data-actor="frank">COL FRANK<br/>
+        That can all be taken care of at the enlistment office. Anyone with special skills will be wanted in specific departments. <br/>
+        They need men in all branches of the service. You will all be interviewed and then take aptitude tests.
+        </span></p>
+        
+        <p><span data-actor="walter">WALTER<br/>
+        Sounds good to me. I am ready to serve and get this war over with quickly.</span></p>
+        <p>[Conveyor belt is pushed to back wall or out of site to make way for new scene. Light change.]</p>
+    </div>
+    <footer>
+      <p><small> &copy; 2020-<span id="copyright"></span> By Jade Kimbrough, All Rights Reserved ~
+        <a id="html-checker" href="#">Check HTML</a> ~
+        <a id="css-checker" href="#">Check CSS</a>
+          </small></p>
     </footer>
   </main>
+  <script src="js/dom-play.js"></script>
   <script src="js/main.js"></script>
  </body>
 </html>
